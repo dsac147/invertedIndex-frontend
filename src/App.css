@@ -1,38 +1,68 @@
+@import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap');
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+    /* The image used */
+  background-image: url("https://www.fromoldbooks.org/IllustratedLondonNews-Vol56/pages/629-Charles-Dickens-wallpaper/629-Charles-Dickens-wallpaper-q80-1024x640.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-left {
+  padding: 70px;
+  display: flex;
+  flex: 0 0 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: #000;
+  font-size: 25px;
+}
+.content-right {
+  
+  display: none;
+  margin: 50px 0;
+  padding: 20px;
+  flex: 0 0 45%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 8px;
+  min-height: 300px;
+  background-image: url("https://preview.pixlr.com/images/800wm/1482/2/1482101400.jpg");
 
-.App-link {
-  color: #61dafb;
-}
+  /* Full height */
+  height: 100%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
